@@ -29,8 +29,8 @@
 				
 
 				<div class="author-contact">
-					<p><span class="iconfont icon-tel"></span>1888 111011-11</p>
-					<p><span class="iconfont icon-phone"></span>1888 111011-11</p>
+					<p><span class="iconfont icon-tel"></span><a href="tel:1888 111011-11">1888 111011-11</a></p>
+					<p><span class="iconfont icon-phone"></span><a href="tel:1888 111011-11">1888 111011-11</a></p>
 					<p><span class="iconfont icon-msg"></span>8888888@163.com</p>
 				</div>
 

@@ -19,6 +19,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -32,7 +33,6 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -59,7 +59,6 @@ button {
   outline: none;
   border: none;
   border-radius: 0.2rem;
-  -webkit-tap-highlight-color: transparent;
 }
 
 /* base */
@@ -197,6 +196,7 @@ button {
   height: 5rem;
   padding: 1rem 1.5rem;
   background: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: all 0.2s;
 }
@@ -208,17 +208,19 @@ button {
 .menu-inner .menu-search form {
   position: relative;
   width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 0 1px #980209;
 }
 .menu-inner .menu-search .menu-search-text,
 .menu-inner .menu-search .menu-search-btn {
   height: 3rem;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 .menu-inner .menu-search .menu-search-text {
   width: 100%;
   padding: 0 4.5rem 0 1rem;
-  border: 1px solid #c8161e;
   font-size: 1.2rem;
+  background: transparent;
 }
 .menu-inner .menu-search .menu-search-btn {
   position: absolute;
@@ -320,7 +322,8 @@ button {
   background: #fafafa;
 }
 #author .menu .menu-main .icon-list,
-#author .menu .menu-main .icon-search {
+#author .menu .menu-main .icon-search,
+#author .menu .menu-main .icon-close {
   color: #000;
 }
 #author .menu .menu-main .menu-title {
@@ -365,13 +368,14 @@ button {
   margin: 0 0.2rem 1.6rem 0;
   font-size: 1.2rem;
   color: #b5b6bb;
-  border: 1px solid #b5b6bb;
+  box-shadow: inset 0 0 1px #b5b6bb;
   border-radius: 0.2rem;
 }
 #author .author-h .author-card .author-contact p {
   margin: 0 1.5rem;
   line-height: 4rem;
   text-align: left;
+  color: #585c5f;
   position: relative;
 }
 #author .author-h .author-card .author-contact p:before {
@@ -404,6 +408,9 @@ button {
   background: #c8161e;
   color: #fff;
   vertical-align: middle;
+}
+#author .author-h .author-card .author-contact p a {
+  color: #585c5f;
 }
 #author .author-h .author-card .author-contact p:nth-child(3) {
   margin-bottom: 2rem;

@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
-* @Author: 87699
-* @Date:   2018-08-18 12:36:17
-* @Last Modified by:   87699
-* @Last Modified time: 2018-08-19 18:45:36
-*/
 /* base */
 /* text */
 /* border */
@@ -25,6 +19,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -38,7 +33,6 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -65,7 +59,6 @@ button {
   outline: none;
   border: none;
   border-radius: 0.2rem;
-  -webkit-tap-highlight-color: transparent;
 }
 
 /* base */
@@ -212,7 +205,7 @@ button {
   padding: 0 0.5rem;
   font-size: 1.2rem;
   line-height: 2rem;
-  border: 1px solid #b1b2b5;
+  box-shadow: inset 0 0 1px #b1b2b5;
   border-radius: 0.5rem;
   color: #b5b6bb;
 }

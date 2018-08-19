@@ -89,6 +89,7 @@
   height: 5rem;
   padding: 1rem 1.5rem;
   background: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: all 0.2s;
 }
@@ -100,17 +101,19 @@
 .menu-inner .menu-search form {
   position: relative;
   width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 0 1px #980209;
 }
 .menu-inner .menu-search .menu-search-text,
 .menu-inner .menu-search .menu-search-btn {
   height: 3rem;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 .menu-inner .menu-search .menu-search-text {
   width: 100%;
   padding: 0 4.5rem 0 1rem;
-  border: 1px solid #c8161e;
   font-size: 1.2rem;
+  background: transparent;
 }
 .menu-inner .menu-search .menu-search-btn {
   position: absolute;

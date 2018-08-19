@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
-* @Author: 87699
-* @Date:   2018-08-18 12:36:17
-* @Last Modified by:   87699
-* @Last Modified time: 2018-08-19 18:51:44
-*/
 /* base */
 /* text */
 /* border */
@@ -25,6 +19,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -38,7 +33,6 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -65,7 +59,6 @@ button {
   outline: none;
   border: none;
   border-radius: 0.2rem;
-  -webkit-tap-highlight-color: transparent;
 }
 
 /* base */
@@ -203,6 +196,7 @@ button {
   height: 5rem;
   padding: 1rem 1.5rem;
   background: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: all 0.2s;
 }
@@ -214,17 +208,19 @@ button {
 .menu-inner .menu-search form {
   position: relative;
   width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 0 1px #980209;
 }
 .menu-inner .menu-search .menu-search-text,
 .menu-inner .menu-search .menu-search-btn {
   height: 3rem;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 .menu-inner .menu-search .menu-search-text {
   width: 100%;
   padding: 0 4.5rem 0 1rem;
-  border: 1px solid #c8161e;
   font-size: 1.2rem;
+  background: transparent;
 }
 .menu-inner .menu-search .menu-search-btn {
   position: absolute;
@@ -248,12 +244,6 @@ button {
   left: 0;
 }
 
-/*
-* @Author: 87699
-* @Date:   2018-08-18 12:36:17
-* @Last Modified by:   87699
-* @Last Modified time: 2018-08-19 18:45:36
-*/
 /* base */
 /* text */
 /* border */
@@ -274,6 +264,7 @@ button {
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -287,7 +278,6 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -314,7 +304,6 @@ button {
   outline: none;
   border: none;
   border-radius: 0.2rem;
-  -webkit-tap-highlight-color: transparent;
 }
 
 /* base */
@@ -461,7 +450,7 @@ button {
   padding: 0 0.5rem;
   font-size: 1.2rem;
   line-height: 2rem;
-  border: 1px solid #b1b2b5;
+  box-shadow: inset 0 0 1px #b1b2b5;
   border-radius: 0.5rem;
   color: #b5b6bb;
 }
@@ -510,7 +499,7 @@ button {
   height: 2.75rem;
   width: 20.5rem;
   padding-left: 3rem;
-  border: 1px solid #b5b6bb;
+  box-shadow: inset 0 0 1px #b5b6bb;
   color: #b5b6bb;
   border-radius: 1.3rem;
 }

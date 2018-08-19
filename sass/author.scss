@@ -13,7 +13,8 @@
 		.menu-main {
 			background: #fafafa;
 			.icon-list,
-			.icon-search {
+			.icon-search,
+			.icon-close {
 				color: $base-color5;
 			}
 			.menu-title {
@@ -61,7 +62,7 @@
 				margin: 0 0.2rem 1.6rem 0;
 				font-size: 1.2rem;
 				color: $text-color8;
-				border: 1px solid $text-color8;
+				box-shadow: inset 0 0 1px $text-color8;
 				border-radius: 0.2rem;
 			}
 			
@@ -70,6 +71,7 @@
 					margin: 0 1.5rem;
 					line-height: 4rem;
 					text-align: left;
+					color: $text-color6;
 					@include halfPxT($border-color1);
 
 					span {
@@ -83,6 +85,9 @@
 						background: $main-color;
 						color: $base-color1;
 						vertical-align: middle;
+					}
+					a {
+						color: $text-color6;
 					}
 					&:nth-child(3) {
 						margin-bottom: 2rem;

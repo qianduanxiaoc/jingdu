@@ -1,0 +1,32 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-18 18:29:33
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-19 12:44:57
+*/
+@import './ui.scss';
+
+.mask {
+	display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+	background: $mask-color;
+    z-index: 99998;
+    overflow: hidden;
+}
+
+.menu-show {
+	.mask {
+		display: block;
+	}
+}
+
+.group-list-show {
+	.mask {
+		display: block;
+    	z-index: 98;
+	}
+}

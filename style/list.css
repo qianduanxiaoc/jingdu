@@ -1,0 +1,81 @@
+/* base */
+/* text */
+/* border */
+/* main */
+/* icon */
+/* msk */
+/* float */
+/* 0.5px */
+/* 0.5px */
+.list {
+  position: relative;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  position: relative;
+}
+.list:after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  content: '';
+  left: 1.5rem;
+  right: 1.5rem;
+  background: #e5e5e5;
+  height: 1px;
+  transform: scale(1, 0.5);
+  -ms-transform: scale(1, 0.5);
+  /* IE 9 */
+  -webkit-transform: scale(1, 0.5);
+  /* Safari/Chrome */
+  -o-transform: scale(1, 0.5);
+  /* Opera */
+  -moz-transform: scale(1, 0.5);
+  /* Firefox */
+}
+.list > a {
+  display: flex;
+  justify-content: space-between;
+}
+.list > a > div {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.list .list-detail {
+  flex-basis: 100%;
+}
+.list .list-detail:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.list .list-detail.list-detail-s {
+  flex-basis: calc(65% - 1.5rem);
+}
+.list .list-detail h2 {
+  height: 5rem;
+  margin-bottom: 0.8em;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 2.5rem;
+  overflow: hidden;
+  font-weight: normal;
+}
+.list .list-detail .list-name,
+.list .list-detail .list-time {
+  display: inline-block;
+  height: 1.2rem;
+  font-size: 1.2rem;
+  color: #898989;
+}
+.list .list-detail .list-time {
+  float: right;
+}
+.list .list-img {
+  text-align: center;
+  flex-basis: 35%;
+}
+.list .list-img img {
+  max-height: 7.3rem;
+}
+
+/*# sourceMappingURL=list.css.map */

@@ -1,0 +1,34 @@
+@import './ui.scss';
+.sub-menu {
+	padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+	background: $base-color1;
+	.sub-menu-inner {
+		width: 100%;
+		margin-left: -0.6rem;
+		overflow: hidden;
+		flex-wrap: wrap;
+	}
+	.sub-menu-item {
+		display: inline-block;
+		position: relative;
+		padding: 0 0.4rem;
+		margin-bottom: 1rem;
+		font-size: 1.4rem;
+		color: $text-color1;
+		text-align: center;
+		transition: color 0.2s;
+		&:after {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: -1px;
+			width: 1px;
+			height: 1.5rem;
+			background: $main-color;
+			@include scale(0.5, 1);
+		}
+		&.active {
+			color: $main-color;
+		}
+	}
+}

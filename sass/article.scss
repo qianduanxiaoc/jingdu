@@ -1,0 +1,20 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-18 12:36:17
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-18 21:57:57
+*/
+@import './reset.scss';
+@import './ui.scss';
+@import './base.scss';
+@import './list.scss';
+@import './menu.scss';
+@import './article-title.scss';
+@import './article-text.scss';
+@import './relates-title.scss';
+@import './author-link.scss';
+
+#article {
+	width: 100%;
+	background: $base-color1;
+}

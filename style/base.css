@@ -1,0 +1,37 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-18 18:29:33
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-19 12:44:57
+*/
+/* base */
+/* text */
+/* border */
+/* main */
+/* icon */
+/* msk */
+/* float */
+/* 0.5px */
+/* 0.5px */
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(53, 53, 49, 0.3);
+  z-index: 99998;
+  overflow: hidden;
+}
+
+.menu-show .mask {
+  display: block;
+}
+
+.group-list-show .mask {
+  display: block;
+  z-index: 98;
+}
+
+/*# sourceMappingURL=base.css.map */

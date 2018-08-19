@@ -1,0 +1,54 @@
+@import './ui.scss';
+
+.list {
+	position: relative;
+	padding: 1rem 1.5rem;
+	background: $base-color1;
+	@include halfPxB($border-color1);
+	>a {
+		display: flex;
+		justify-content: space-between;
+		>div {
+			flex-grow: 0;
+			flex-shrink: 0;
+		}
+	}
+	.list-detail {
+		@include clear;
+		flex-basis: 100%;
+		&.list-detail-s {
+			flex-basis: calc(65% - 1.5rem);
+		}
+
+		h2 {
+			height: 5rem;
+			margin-bottom: 0.8em;
+			font-size: 1.5rem;
+			color: $text-color1;
+			line-height: 2.5rem;
+			overflow: hidden;
+			font-weight: normal;
+		}
+
+		.list-name,
+		.list-time {
+			display: inline-block;
+			height: 1.2rem;
+			font-size: 1.2rem;
+			color: $text-color4;
+		}
+
+		.list-time {
+			float: right;
+		}
+	}
+
+	.list-img {
+		text-align: center;
+		flex-basis: 35%;
+
+		img {
+			max-height: 7.3rem;
+		}
+	}
+}

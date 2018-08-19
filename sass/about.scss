@@ -1,0 +1,18 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-18 12:36:17
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-19 15:53:09
+*/
+@import './reset.scss';
+@import './ui.scss';
+@import './base.scss';
+@import './list.scss';
+@import './menu.scss';
+@import './banner.scss';
+@import './sub-menu.scss';
+
+#about {
+	width: 100%;
+	background: $base-color4;
+}

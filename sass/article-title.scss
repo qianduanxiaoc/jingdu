@@ -1,0 +1,28 @@
+@import './reset.scss';
+@import './ui.scss';
+@import './base.scss';
+
+.article-title {
+	padding: 1rem 1.5rem;
+	background: $base-color1;
+	h2 {
+		margin-bottom: 1rem;
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+		font-weight: normal;
+		color: $text-color2;
+	}
+	.article-title-tag {
+		display:inline-block;
+		height: 1.2rem;
+		padding: 0 1rem 0 0;
+		font-size: 1.2rem;
+		color: $text-color4;
+		&:not(:first-child) {
+			display: inline-block;
+			content: '';
+			padding: 0 1rem;
+			border-left: 1px solid $border-color3;
+		}
+	}
+}

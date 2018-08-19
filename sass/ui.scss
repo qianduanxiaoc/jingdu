@@ -1,0 +1,81 @@
+/* base */
+$base-color1: #fff;
+$base-color2: #212121;
+$base-color3: #2d2c3d;
+$base-color4: #e6e6e6;
+$base-color5: #000;
+$base-color6: #f2f2f2;
+
+/* text */
+$text-color1: #333;
+$text-color2: #4c4c4c;
+$text-color3: #3d3d3d;
+$text-color4: #898989;
+$text-color5: #727272;
+$text-color6: #585c5f;
+$text-color7: #666;
+$text-color8: #b5b6bb;
+
+/* border */
+$border-color1: #e5e5e5;
+$border-color2: #b5b6bb;
+$border-color3: #bebebe;
+$border-color4: #b1b2b5;
+
+/* main */
+$main-color: #c8161e;
+
+/* icon */
+$icon-color: #95969c;
+
+/* msk */
+$mask-color: rgba(53,53,49,0.3);
+
+/* float */
+@mixin clear {
+	&:after {
+		display: block;
+		content: '';
+		clear: both;	
+	}
+}
+
+@mixin scale($x: 1, $y: 0.5) {
+	transform: scale($x, $y);
+	-ms-transform: scale($x, $y);	/* IE 9 */
+	-webkit-transform: scale($x, $y);	/* Safari/Chrome */
+	-o-transform: scale($x, $y);	/* Opera */
+	-moz-transform: scale($x, $y);	/* Firefox */
+}
+
+/* 0.5px */
+@mixin halfPxT($color: $border-color1, $pos: 1.5rem) {
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		display: block;
+		content: '';
+		left: $pos;
+		right: $pos;
+		background: $color;
+		height: 1px;
+		@include scale();
+	}
+}
+
+/* 0.5px */
+@mixin halfPxB($color: $border-color1, $pos: 1.5rem) {
+	position: relative;
+	&:after {
+		position: absolute;
+		display: block;
+		bottom: 0;
+		content: '';
+		left: $pos;
+		right: $pos;
+		background: $color;
+		height: 1px;
+		@include scale();
+	}
+}

@@ -1,0 +1,52 @@
+/* base */
+/* text */
+/* border */
+/* main */
+/* icon */
+/* msk */
+/* float */
+/* 0.5px */
+/* 0.5px */
+.sub-menu {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  background: #fff;
+}
+.sub-menu .sub-menu-inner {
+  width: 100%;
+  margin-left: -0.6rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.sub-menu .sub-menu-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+  transition: color 0.2s;
+}
+.sub-menu .sub-menu-item:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -1px;
+  width: 1px;
+  height: 1.5rem;
+  background: #c8161e;
+  transform: scale(0.5, 1);
+  -ms-transform: scale(0.5, 1);
+  /* IE 9 */
+  -webkit-transform: scale(0.5, 1);
+  /* Safari/Chrome */
+  -o-transform: scale(0.5, 1);
+  /* Opera */
+  -moz-transform: scale(0.5, 1);
+  /* Firefox */
+}
+.sub-menu .sub-menu-item.active {
+  color: #c8161e;
+}
+
+/*# sourceMappingURL=sub-menu.css.map */

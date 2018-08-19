@@ -1,0 +1,122 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-18 12:36:17
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-19 18:51:44
+*/
+@import './reset.scss';
+@import './ui.scss';
+@import './base.scss';
+@import './menu.scss';
+@import './author-link.scss';
+
+#group {
+	width: 100%;
+	background: $base-color1;
+
+	.group-hotline {
+		height: 5.3rem;
+		line-height: 5.3rem;
+		text-align: center;
+		color: $text-color1;
+		background: $base-color6;
+		.icon-kf {
+			margin-right: 1.2rem;
+			font-size: 3rem;
+			color: $main-color;
+		    vertical-align: middle;
+		}
+		a {
+			margin-left: 0.4rem;
+			color: $text-color1 !important;
+		}
+	}
+
+	.group-search {
+		height: 5rem;
+		padding: 1rem 0;
+		line-height: 3rem;
+		text-align: center;
+		background: $base-color1;
+		>span {
+			position: relative;
+			margin-right: 1rem;
+			color: $text-color1;
+			font-size: 1.4rem;
+		}
+		.icon-search {
+			position: absolute;
+			right: -3.5rem;
+			color: $text-color8;
+			font-size: 1.4rem;
+		}
+		input {
+			height: 2.75rem;
+			width: 20.5rem;
+			padding-left: 3rem;
+			border: 1px solid $text-color8;
+			color: $text-color8;
+			border-radius: 1.3rem;
+		}
+	}
+
+	.group-tab {
+		position: relative;
+		display: flex;
+		height: 5rem;
+		line-height: 5rem;
+		align-items: center;
+		background: $base-color1;
+		box-shadow: 0 1px 9px 0 rgba(0,0,0,0.05);
+		.group-tab-item {
+			flex-basis: 33.3%;
+			text-align: center;
+			color: $text-color1;
+			font-size: 1.4rem;
+			>span {
+				&:first-child {
+					margin-right: 0.2rem;
+				}
+			}
+			&.active {
+				color: $main-color;
+				.icon-arrow {
+					color: $main-color;
+					transform: rotate(180deg);
+				}
+			}
+		}
+		.icon-arrow {
+			display: inline-block;
+			color: $icon-color;
+			font-size: 1.6rem;
+			transition: transform 0.2s;
+		}
+
+		.group-tab-list {
+			display: none;
+			position: absolute;
+			top: 5rem;
+			width: 100%;
+			background: $base-color1;
+			>div {
+				height: 5rem;
+				line-height: 5rem;
+				@include halfPxB($border-color1, 0);
+				text-align: center;
+				font-size: 1.4rem;
+				color: $text-color7;
+				&.active {
+					color: $main-color;
+				}
+			}
+		}
+	}
+}
+
+.group-list-show {
+	.group-wraper {
+		position: relative;
+		z-index: 99;
+	}
+}

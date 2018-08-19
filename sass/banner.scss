@@ -1,0 +1,29 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-19 15:14:34
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-19 15:16:49
+*/
+
+.banner {
+	display: flex;
+	margin: 1.5rem 0;
+	align-items: center;
+	justify-content: space-between;
+	.banner-item {
+		flex-basis: 48.7%;
+		height: 8.25rem;
+		line-height: 8.25rem;
+		text-align: center;
+		color: $base-color1;
+		background: #b4e7d4;
+	}
+
+	&.large {
+		margin: 0;
+		.banner-item {
+			flex-basis: 100%;
+			height: 16.2rem;
+		}
+	}
+}

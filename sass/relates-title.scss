@@ -1,0 +1,42 @@
+/*
+* @Author: 87699
+* @Date:   2018-08-18 20:52:27
+* @Last Modified by:   87699
+* @Last Modified time: 2018-08-19 18:52:56
+*/
+
+.release-title {
+	position: relative;
+	padding: 1rem 1.5rem 0 1.5rem;
+	&.large {
+		font-size: 1.8rem;
+		color: $text-color2;
+		line-height: 2.8rem;
+		&.line {
+			padding-left: 2.2rem; 
+			&:before {
+				position: absolute;
+				content: '';
+				left: 1.5rem;
+				top: 1.5rem;
+				height: 1.8rem;
+				border-left: 2px solid $text-color2;
+			}
+		}
+	}
+
+	&.middle {
+		padding: 1rem 0;
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		font-weight: normal;
+		color: $text-color1;
+		@include halfPxB($border-color1, 0);
+		.icon-slide,
+		.icon-add {
+			position: absolute;
+			right: 0;
+			color: $text-color1;
+		}
+	}
+}

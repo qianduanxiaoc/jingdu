@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;EAKE;AACF,aAAc;EAKb,IAAI;;AAJJ,iBAAI;EACH,KAAK,EAAE,IAAI",
+"sources": ["../sass/article-text.scss"],
+"names": [],
+"file": "article-text.css"
+}
